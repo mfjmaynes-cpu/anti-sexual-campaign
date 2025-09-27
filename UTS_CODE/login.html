@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #2d2d44; /* Deep indigo for secrecy */
+            color: #f3e6fa; /* Soft lavender text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: #3e3e5c; /* Slightly lighter indigo */
+            padding: 2.5rem 3rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(44,44,68,0.18);
+            min-width: 400px;
+        }
+        h2 {
+            color: #ffb997;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid #6a1b9a;
+            border-radius: 8px;
+            font-size: 1.15rem;
+            background: #f3e6fa;
+            color: #2d2d44;
+        }
+        textarea {
+            width: 100%;
+            height: 140px;
+            margin-bottom: 1.25rem;
+            border: 1px solid #d81b60;
+            border-radius: 8px;
+            padding: 1rem;
+            font-size: 1.15rem;
+            background: #f3e6fa;
+            color: #2d2d44;
+            resize: vertical;
+        }
+        button {
+            width: 100%;
+            padding: 1rem;
+            background: #d81b60;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.15rem;
+            font-weight: bold;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+        button:hover {
+            background: #6a1b9a;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form>
+            <input type="text" placeholder="Preferred Name" required>
+            <textarea placeholder="Message" required style="width:100%;height:100px;margin-bottom:1rem;border:1px solid #ccc;border-radius:6px;padding:0.75rem;"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = 'UTS.html';
+        });
+        </script>
+    </div>
+</body>
+</html>
